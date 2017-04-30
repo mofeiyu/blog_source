@@ -72,5 +72,5 @@ theme: hexo-theme-next
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: http://github.com/mofeiyu/mofeiyu.github.io
+  repo: https://github.com/mofeiyu/mofeiyu.github.io
   branch: master
