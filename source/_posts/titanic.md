@@ -4,6 +4,8 @@ date: 2018-7-23 11:44
 tags: [kaggle]
 ---
 
+[Titanic: Machine Learning from Disaster](https://www.kaggle.com/c/titanic)
+
 ## 1. 问题##
 
 泰坦尼克号与冰山相撞，2224名船员及乘客中，逾1500人丧生。本题是一个二分类问题，需要我们根据题目提供的部分游客信息和存活情况来预测什么样的人有可能在这次灾难中存活。
