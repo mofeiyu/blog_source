@@ -121,7 +121,7 @@ print train.info()
 
 {% img [class names] /img/kaggle/titanic/Figure2.png 300 500 %}
 
-### 2.2.4. Fare数据缺失处理 ####
+#### 2.2.4. Fare数据缺失处理 ####
 
 Fare缺失的数据只在test集里面存在，且只有两个，我这里采用了插值法处理。
 
@@ -354,8 +354,7 @@ def clean_data(data):
     data = data.drop('Cabin', axis=1)   
 
     data['is_male'] = data['Sex'].apply(lambda x: 1 if x == 'male' else 0)
-    data = data.drop('Sex', axis=1)
-    
+    data = data.drop('Sex', axis=1)    
 
     data['family&friend'] = data['SibSp'] + data['Parch']
     data = data.drop(['SibSp', 'Parch'], axis=1)
@@ -374,7 +373,6 @@ def save_predict_result(ID, result):
     submission.to_csv('submission.csv', index = False)
     print 'save_result succ!!!'
     return
-
 
 def choose_parameter(model, X, Y):
     para = { 'n_estimators': [10,100,300,800], 
